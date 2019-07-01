@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Happy Land</title>
+    <link rel="icon" href="imagens/titulo.png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body id="corpo">
+    <header>
+        <!-- menu principal -->
+        <nav>
+            <div id="navbar">
+                <ul>
+                    <li id="titulo"><big>Happy Land</big></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apresentação.html">apresentação do grupo</a></li>
+                    <li><a href="motivo.html">Motivação</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="column conteudo">
+        <!-- conteudo do texto no meio-->
+
+        <h2><big>Contato</big></h2>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td>
+                    <input type="text" name="nome" size="40">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>numero:</td>
+                <td>
+                    <input type="text" name="numero" size="40">
+                    <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>email:</td>
+                <td>
+                    <input type="text" name="email" size="40">
+                    <br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>mensagem:</td>
+                <td>
+                    <textarea rows="8" cols="40" maxlength="400"></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1" style="color: black"> Marque aqui se você tem mais de 18 anos! </label>
+        </div>
+
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Enviar</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Enviado</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Sua mensagem foi enviada com sucesso</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="rdp">
+            <!-- rodapé -->
+            <p>Happy Land @ 2019 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

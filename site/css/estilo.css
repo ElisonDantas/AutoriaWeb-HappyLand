@@ -1,0 +1,121 @@
+body{
+  font-family: Helvetica, sans-sereif; /*define a fonte de todo HTML */
+  background-image: url('../imagens/bg.jpg'); /*Define a imagem de fundo */
+  background-size: cover; /*define  */
+  background-repeat: no-repeat; /*define que a imagem nao vai repedir no fundo */
+  height: 100%; /*define que ela vai ocupar a tela toda */
+}
+#corpo{
+	margin: auto; /* define a margem automatica */
+	}
+
+#navbar{
+	background: #00bfff; /* cor de fundo do menu principal */
+  display: flex; 
+  position: fixed; /* o menu principal ficar fixo */
+  width: 100%;
+} 
+
+hr {/* definindo a linha que divide os conteudos */
+  color: rgb(35, 35, 35); 
+  background-color: rgb(35, 35, 35);
+  height: 1px;
+  border: none;
+}
+
+
+header div{
+	list-style: none; 
+	padding: none;
+	overflow: hidden; /* tudo que passa do div fica oculto */ 
+	margin: 0px 0px;
+	background-color: #333;  /* cor de fundo */
+	margin-right: 0px;
+
+}
+header li{
+	display: inline; /* coloca cada "link" um ao lado do outro no menu principal */
+	 
+}
+header  li a { /* definindo as palavras do manu principal */
+  color: white; /*cor */
+  padding: 30px 16px 30px 16px; /*distancia */
+  text-decoration: none;
+  margin: 0px 40px 0px 0px /* margin */
+}
+
+#titulo {
+  color: rgb(35, 35, 35); /* cor */
+  margin-right: 5.5em; /* margin */ 
+
+}
+
+header li a:hover{ /* definando oq acontece quando passamos o mouse nos "links" do menu principal */
+	text-decoration:none;
+	background: #87cefa; /* muda pra essa cor */
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  padding: 15px;
+}
+
+
+.menu {
+  width: 25%; /*define o tamanho da barra lateral */
+  position: fixed; /*deixa ela fixa */
+  top: 50px; /* distancia do topo */
+}
+
+.conteudo {
+  width: 55%; /* tamando*/
+  background: rgba(135, 206, 235, 0.9); /* cor de fundo e a transparencia "0.9" */
+  color: rgb(35, 35, 35); /*cor das palavras */ 
+  margin-top: 65px; /* distancia do top */
+  margin-right: 20%; /* distancia da lateral */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+  float: right; /* posição na direita */
+}
+
+.menu ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0px 0px;
+}
+
+.menu li {
+  padding: 8px; 
+  margin-bottom: 8px; /* distancia de cade menu ao outro*/
+  background-color: rgba(51, 181, 229, 0.8); /*cor do bg do menu lateral */
+  color: #ffffff; /* cor das palavras do menu lateral*/
+}
+
+.menu li > a {
+  color: inherit; /*define que a car foi herdada */
+  text-decoration: inherit; /*difine que a decoração foi herdada */
+}
+
+.menu li:hover { /*define tudo quando colocar o mouse em cima */
+  background-color: #0099cc; /*Define a cor do fundo quando colocamos o mouse em cima */
+}
+
+.artigo > p {
+
+  text-align: left; /* define que o texto vai ficar a esquerda */
+}
+
+.artigo > img {
+  float: left; /*Define que o imagem vai ficar do lado direito */
+  margin-right: 5px; /*define que a distancia da imagem e do texto */
+}
+.footer { /* Rodapé*/
+  background-color: #111; /*Cor fundo do rodapé*/
+  color: white; /* Cor das pelavras*/
+  padding: 2px; /*Distancia da margem do palavra ate a linha do rodapé */
+  bottom:0;
+  width:100%; /* Fazer a largura do rodape preencher o tamanho da tela toda */
+  float: right;
+}
